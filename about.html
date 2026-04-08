@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nardos | About — DSA Certified Developer</title>
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23f59e0b'/%3E%3Ctext x='50' y='68' font-size='48' text-anchor='middle' fill='white' font-weight='bold' font-family='Arial'%3ENT%3C/text%3E%3C/svg%3E">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+
+  <div class="fixed top-4 right-4 z-50">
+    <button id="darkModeToggle" class="bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+      <i class="fas fa-sun text-yellow-500 dark:hidden text-xl"></i>
+      <i class="fas fa-moon hidden dark:inline-block text-gray-200 text-xl"></i>
+    </button>
+  </div>
+
+  <nav class="sticky top-0 z-40 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
+    <div class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">NARDOS<span class="text-amber-500">.</span></a>
+      <div class="hidden md:flex space-x-8 text-gray-700 dark:text-gray-300 font-medium">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="work.html" class="nav-link">My Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-gray-700 dark:text-gray-300"><i class="fas fa-bars text-2xl"></i></button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden bg-white/95 dark:bg-gray-900/95 px-6 pb-5 flex flex-col space-y-3">
+      <a href="index.html" class="nav-link block py-2">Home</a>
+      <a href="about.html" class="nav-link block py-2">About</a>
+      <a href="work.html" class="nav-link block py-2">My Projects</a>
+      <a href="contact.html" class="nav-link block py-2">Contact</a>
+    </div>
+  </nav>
+
+  <main class="max-w-5xl mx-auto px-6 md:px-8 py-16">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">About <span class="gradient-text">Me</span></h1>
+      <div class="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto mt-3 rounded-full"></div>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 rounded-3xl p-8 flex justify-center">
+        <div class="w-56 h-56 md:w-72 md:h-72 rounded-full bg-white dark:bg-gray-800 shadow-xl flex items-center justify-center text-8xl overflow-hidden">
+          <img src="assets/my-photo.jpg" alt="Nardos" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x400/amber-200/white?text=NT'">
+        </div>
+      </div>
+      <div class="space-y-5">
+        <p class="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+          <span class="font-bold text-amber-600 dark:text-amber-400">Hi, I'm Nardos Tsige!</span> I'm a second-year Software Engineering student at AAU and passionate full-stack developer and a <strong class="gradient-text">DSA-certified</strong> problem solver.
+        </p>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+          I successfully completed my Data Structures & Algorithms certification and I'm currently diving deep into <strong>Full-Stack Web Development</strong> with Thrives and Nexus. I believe in learning by building — every project teaches me something new.
+        </p>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+          I solve LeetCode and Codeforce problems in <strong>Python, JavaScript, and Java</strong> (and planning to learn C++ soon!). I love tackling real-world problems and creating tools that make a difference — especially for students.
+        </p>
+        <div class="pt-4 flex flex-wrap gap-3">
+          <span class="px-3 py-1 bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 rounded-full text-sm">DSA Certified ✅</span>
+          <span class="px-3 py-1 bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 rounded-full text-sm">Full-Stack in Progress 🚀</span>
+          <span class="px-3 py-1 bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 rounded-full text-sm">Project-Based Learner 💡</span>
+        </div>
+        <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-600 to-orange-500 text-white rounded-full font-semibold hover:shadow-lg transition-all mt-4">
+          Let's work together <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700">
+        <div class="text-3xl font-black gradient-text">100+</div>
+        <div class="text-gray-600 dark:text-gray-400">LeetCode and Codeforce Problems</div>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700">
+        <div class="text-3xl font-black gradient-text">6+</div>
+        <div class="text-gray-600 dark:text-gray-400">Projects Built</div>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700">
+        <div class="text-3xl font-black gradient-text">3</div>
+        <div class="text-gray-600 dark:text-gray-400">Languages (Python/JS/Java)</div>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700">
+        <div class="text-3xl font-black gradient-text">∞</div>
+        <div class="text-gray-600 dark:text-gray-400">Coffee Cups ☕</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-900 dark:bg-black text-gray-400 py-8 mt-10 text-center text-sm">
+    <p>© 2026 Nardos Tsige — Code. Create. Solve.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

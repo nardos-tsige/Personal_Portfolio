@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Nardos | Home — Creative Portfolio</title>
+  
+  
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23f59e0b'/%3E%3Ctext x='50' y='68' font-size='48' text-anchor='middle' fill='white' font-weight='bold' font-family='Arial, sans-serif'%3ENT%3C/text%3E%3C/svg%3E">
+  
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <link rel="stylesheet" href="css/style.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    </head>
+    <body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+
+  
+    <div class="fixed top-4 right-4 z-50">
+        <button id="darkModeToggle" class="bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+        <i class="fas fa-sun text-yellow-500 dark:hidden text-xl"></i>
+        <i class="fas fa-moon hidden dark:inline-block text-gray-200 text-xl"></i>
+        </button>
+    </div>
+
+  
+    <nav class="sticky top-0 z-40 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 shadow-sm transition-colors">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">NARDOS<span class="text-amber-500">.</span></a>
+        <div class="hidden md:flex space-x-8 text-gray-700 dark:text-gray-300 font-medium">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="work.html" class="nav-link">My Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      
+      
+        <button id="menuBtn" class="md:hidden text-gray-700 dark:text-gray-300 focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </div>
+    
+        
+        <div id="mobileMenu" class="md:hidden hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-md px-6 pb-5 flex flex-col space-y-3 border-t border-gray-200 dark:border-gray-700">
+            <a href="index.html" class="nav-link block py-2">Home</a>
+            <a href="about.html" class="nav-link block py-2">About</a>
+            <a href="work.html" class="nav-link block py-2">My Projects</a>
+            <a href="contact.html" class="nav-link block py-2">Contact</a>
+        </div>
+    </nav>
+
+  
+    <section class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24 flex flex-col-reverse md:flex-row items-center gap-12">
+        <div class="flex-1 text-center md:text-left">
+        <div class="overflow-hidden mb-4">
+        <span class="inline-block animate-slide-in px-4 py-1.5 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300 text-sm font-semibold tracking-wide">
+          ✨ Welcome to my creative space
+        </span>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight">
+        I'm <span class="gradient-text">Nardos Tsige</span>
+      </h1>
+      <div class="h-12 mt-4">
+        <p class="text-xl text-gray-600 dark:text-gray-400 typing-text">
+          <span class="typed-word"></span>
+        </p>
+      </div>
+      <p class="text-gray-600 dark:text-gray-400 text-lg mt-6 max-w-lg mx-auto md:mx-0">
+        Full-Stack Developer | DSA Certified | Problem Solver | Building real-world solutions that matter.
+      </p>
+      <div class="flex flex-wrap gap-4 mt-8 justify-center md:justify-start">
+        <a href="work.html" class="px-7 py-3 bg-gradient-to-r from-amber-600 to-orange-500 hover:from-amber-700 hover:to-orange-600 text-white font-semibold rounded-full shadow-md transition-all duration-300 transform hover:scale-105">
+          View My Work <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+        <a href="contact.html" class="px-7 py-3 border-2 border-amber-600 dark:border-amber-500 text-amber-600 dark:text-amber-400 font-semibold rounded-full hover:bg-amber-50 dark:hover:bg-amber-900/20 transition">
+          Let's Connect
+        </a>
+      </div>
+    </div>
+    <div class="flex-1 flex justify-center">
+      <div class="relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full blur-2xl opacity-20 animate-pulse"></div>
+        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-amber-200 to-orange-200 dark:from-amber-800/30 dark:to-orange-800/30 flex items-center justify-center shadow-2xl relative overflow-hidden">
+          
+          <img src="assets/my-photo.jpg" alt="Nardos Tsige" class="w-full h-full object-cover rounded-full" onerror="this.src='https://placehold.co/400x400/amber-200/white?text=Nardos'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white dark:bg-gray-800/50 transition-colors">
+    <div class="max-w-6xl mx-auto px-6 md:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">What Drives <span class="gradient-text">Me</span></h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto mt-3 rounded-full"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="group p-6 rounded-2xl bg-gray-50 dark:bg-gray-800 hover:bg-white dark:hover:bg-gray-700 hover:shadow-xl transition-all duration-300 text-center">
+          <div class="text-5xl mb-4 group-hover:scale-110 transition-transform">💡</div>
+          <h3 class="text-xl font-bold text-gray-800 dark:text-white">Problem Solver</h3>
+          <p class="text-gray-600 dark:text-gray-400 mt-2">I love tackling real-world challenges through code and creative thinking.</p>
+        </div>
+        <div class="group p-6 rounded-2xl bg-gray-50 dark:bg-gray-800 hover:bg-white dark:hover:bg-gray-700 hover:shadow-xl transition-all duration-300 text-center">
+          <div class="text-5xl mb-4 group-hover:scale-110 transition-transform">🚀</div>
+          <h3 class="text-xl font-bold text-gray-800 dark:text-white">Project-Based Learner</h3>
+          <p class="text-gray-600 dark:text-gray-400 mt-2">Building things is how I learn best — from prototypes to production.</p>
+        </div>
+        <div class="group p-6 rounded-2xl bg-gray-50 dark:bg-gray-800 hover:bg-white dark:hover:bg-gray-700 hover:shadow-xl transition-all duration-300 text-center">
+          <div class="text-5xl mb-4 group-hover:scale-110 transition-transform">🌍</div>
+          <h3 class="text-xl font-bold text-gray-800 dark:text-white">Real-World Impact</h3>
+          <p class="text-gray-600 dark:text-gray-400 mt-2">Creating tools that help students and communities grow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="bg-gray-900 dark:bg-black text-gray-400 py-10 mt-10">
+    <div class="max-w-6xl mx-auto px-6 md:px-8 text-center">
+      <p class="text-sm">© 2026 Nardos Tsige — Building solutions, one line of code at a time.</p>
+      <div class="flex justify-center gap-6 mt-4">
+        <a href="https://github.com/nardos-tsige" target="_blank" class="hover:text-amber-400 transition"><i class="fab fa-github text-xl"></i></a>
+        <a href="https://www.linkedin.com/in/nardos-tsige-b642093a3/" target="_blank" class="hover:text-amber-400 transition"><i class="fab fa-linkedin text-xl"></i></a>
+        <a href="https://leetcode.com/u/nardos_tsige_fereja/" target="_blank" class="hover:text-amber-400 transition"><i class="fab fa-code text-xl"></i></a>
+        <a href="https://www.instagram.com/lo.za961/" target="_blank" class="hover:text-amber-400 transition">
+  <i class="fab fa-instagram text-xl"></i>
+</a>
+    </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
